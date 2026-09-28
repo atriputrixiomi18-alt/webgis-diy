@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebGIS Kependudukan DIY</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="status">WEBGIS KEPENDUDUKAN DIY</h1>
+        <p> Aplikasi untuk menampilkan informasi jumlah penduduk kabupaten / kota di DIY.</p>
+    </header>
+    <main class="main-content">
+        <aside class="info-panel">
+            <h2>Informasi wilayah</h2>
+            <p>Pilih wilayah untuk melihat informasi kependudukan.</p>
+            <label for="wilayah-select">
+                Pilih Kabupaten/Kota
+            </label>
+            <select id="wilayah-select">
+                <option value="">Pilih Wilayah</option>
+            </select>
+            <button id="btn-peta"> Tampilkan Peta</button>
+        </aside>
+        <section class=" map-container">
+            <div id="map"></div>
+
+            <div class="map-legend">
+                <h3>Kepadatan Penduduk (jiwa/km²)</h3>
+
+                <div class="legend-item">
+                    <span class="legend-color low"></span>
+                    <span>Rendah</span>
+                </div>
+
+                <div class="legend-item">
+                    <span class="legend-color medium"></span>
+                    <span>Sedang</span>
+                </div>
+
+                <div class="legend-item">
+                    <span class="legend-color high"></span>
+                    <span>Tinggi</span>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class=" footer">
+        <h2> Informasi WebGis</h2>
+        <p> WebGis ini menampilkan informasi kependudukan kabupaten / kota di Daerah Istimewa Yogyakarta.</p>
+        <a href="https://www.bps.go.id"> Sumber Data </a>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="js/app.js"></script>
+    </footer>
+</body>
+
+</html>
